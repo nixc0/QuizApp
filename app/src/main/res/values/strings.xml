@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">Linux Command Line Quiz</string>
+
+    <!-- Question one and answers to question one. -->
+    <string name="questionOne">What does the pwd command do?</string>
+    <string name="answerOneA">Prints to a Word Document.</string>
+    <string name="answerOneB">Displays the current working directory.</string>
+    <string name="answerOneC">Pools all Writing Devices.</string>
+    <string name="answerOneD">Renames the current working directory.</string>
+
+    <!-- Question two and answers to question two. -->
+    <string name="questionTwo">What is the difference in the > and >> operators?</string>
+    <string name="answerTwoA">> appends the standard output to a file, >> appends the standard error to a file.</string>
+    <string name="answerTwoB">D>> appends the standard output to a file, > appends the standard error to a file.</string>
+    <string name="answerTwoC">> Overwrites a file or creates a new one, >> appends a file or creates a new one.</string>
+    <string name="answerTwoD">>> Overwrites a file or creates a new one, > appends a file or creates a new one.</string>
+
+    <!-- Question three and answers to question three. -->
+    <string name="questionThree">apt-get update does what on a Debian based system?</string>
+    <string name="answerThreeA">Information of the latest update is returned.</string>
+    <string name="answerThreeB">All available updates are downloaded and installed.</string>
+    <string name="answerThreeC">All available updates are downloaded so that you can install them later.</string>
+    <string name="answerThreeD">update is an invalid option for apt-get</string>
+
+    <!-- Question four and answers to question four. RadioGroup for two answers -->
+    <string name="questionFour">Which of these commands will update the htop program on a RedHat based system? (choose two)</string>
+    <string name="answerFourA">rpm -U htop</string>
+    <string name="answerFourB">rpm update htop</string>
+    <string name="answerFourC">rpm -u htop</string>
+    <string name="answerFourD">rpm upgrade htop</string>
+
+    <!-- Question five and answers to question five. -->
+    <string name="questionFive">What does the top command do</string>
+    <string name="answerFiveA">Displays the "top" of a text file.</string>
+    <string name="answerFiveB">Displays a dynamic list of processes ordered according to their CPU use.</string>
+    <string name="answerFiveC">Returns the name of a parent program.</string>
+    <string name="answerFiveD">Nothing. top is an invalid command.</string>
+
+    <!-- Question six and answers to question six. -->
+    <string name="questionSix">What type of partition does Linux use as an extension of memory?</string>
+    <string name="answerSixA">swap</string>
+    <string name="answerSixB">D.</string>
+    <string name="answerSixC">> Ovone.</string>
+    <string name="answerSixD">>> ne.</string>
+
+    <!-- Question seven and answers to question seven. -->
+    <string name="questionSeven">What is the purpose of udev?</string>
+    <string name="answerSevenA">To uninstall a device</string>
+    <string name="answerSevenB">To manage the /dev directory tree.</string>
+    <string name="answerTSeven">To upgrade drivers for a device.</string>
+    <string name="answerSevenD">To unmount a device</string>
+
+    <!-- Question eight and answers to question eight. -->
+    <string name="questionEight">A new Linux computer with a single SATA hard drive will assign what device identifier to the drive?</string>
+    <string name="answerEightA">/dev/sda or /dev/hda</string>
+    <string name="answerEightB">/dev/hda</string>
+    <string name="answerEightC">/dev/sda</string>
+    <string name="answerEightD">C:</string>
+
+    <!-- Question nine and answers to question nine. -->
+    <string name="questionNine">How do you switch to insert mode from Vi's command mode?</string>
+    <string name="answerNineA">Type :</string>
+    <string name="answerNineB">Type ;</string>
+    <string name="answerNineC">Ctrl + i</string>
+    <string name="answerNineD">Type i</string>
+
+
+    <!-- Question ten and answers to question ten. -->
+    <string name="questionTen">How do you switch to command mode from Vi's insert mode</string>
+    <string name="answerTenA">Press Esc</string>
+    <string name="answerTenB">Press Enter</string>
+    <string name="answerTenC">Press /</string>
+    <string name="answerTenD">Press \</string>
+</resources>
