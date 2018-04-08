@@ -22,7 +22,7 @@
     <string name="answerThreeC">All available updates are downloaded so that you can install them later.</string>
     <string name="answerThreeD">update is an invalid option for apt-get</string>
 
-    <!-- Question four and answers to question four. RadioGroup for two answers -->
+    <!-- Question four and answers to question four. Check boxes for two answers -->
     <string name="questionFour">Which of these commands will update the htop program on a RedHat based system? (choose two)</string>
     <string name="answerFourA">rpm -U htop</string>
     <string name="answerFourB">rpm update htop</string>
@@ -57,12 +57,10 @@
     <string name="answerEightC">/dev/sda</string>
     <string name="answerEightD">C:</string>
 
-    <!-- Question nine and answers to question nine. -->
-    <string name="questionNine">How do you switch to insert mode from Vi's command mode?</string>
-    <string name="answerNineA">Type :</string>
-    <string name="answerNineB">Type ;</string>
-    <string name="answerNineC">Ctrl + i</string>
-    <string name="answerNineD">Type i</string>
+    <!-- Question nine and answers to question nine. Fill in the blank -->
+    <string name="questionNine">What do you type to switch to insert mode from Vi's command mode?</string>
+    <string name="answerNineA">:</string>
+
 
 
     <!-- Question ten and answers to question ten. -->
