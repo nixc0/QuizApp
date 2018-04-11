@@ -407,7 +407,7 @@
             android:text="@string/questionNine" />
 
         <EditText
-            android:id="@+id/answerNine"
+            android:id="@+id/answerNineText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="Type answer"
@@ -468,7 +468,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="16dp"
-            android:onClick="calulateScore"
+            android:onClick="calculateScore"
             android:text="@string/submit" />
 
     </LinearLayout>

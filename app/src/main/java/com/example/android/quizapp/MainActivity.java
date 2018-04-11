@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -12,7 +13,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     // Declare global variables
-    int correctAnswers = 0;
+    double correctAnswers = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,69 +33,74 @@ public class MainActivity extends AppCompatActivity {
         RadioButton answerSix = findViewById(R.id.answerSixA);
         RadioButton answerSeven = findViewById(R.id.answerSevenB);
         RadioButton answerEight = findViewById(R.id.answerEightC);
-
+        EditText answerNine = (EditText) findViewById(R.id.answerNineText);
         RadioButton answerTen = findViewById(R.id.answerTenA);
 
         //Logic to grade the quiz
 
         // Is question one correct?
         if (answerOne.isChecked()) {
-            correctAnswers += 1;
+            correctAnswers = correctAnswers + 1;
         }
 
         // Is question two correct?
         if (answerTwo.isChecked()) {
-            correctAnswers += 1;
+            correctAnswers = correctAnswers + 1;
         }
 
         // Is question three correct?
         if (answerThree.isChecked()) {
-            correctAnswers += 1;
+            correctAnswers = correctAnswers + 1;
         }
 
         // Is question four correct?
         if (answerFourB.isChecked()) {
-            correctAnswers += .5;
+            correctAnswers = correctAnswers + .5;
         }
         if (answerFourD.isChecked()) {
-            correctAnswers += .5;
+            correctAnswers = correctAnswers + .5;
         }
 
 
         // Is question five correct?
         if (answerFive.isChecked()) {
-            correctAnswers += 1;
+            correctAnswers = correctAnswers + 1;
         }
 
         // Is question six correct?
         if (answerSix.isChecked()) {
-            correctAnswers += 1;
+            correctAnswers = correctAnswers + 1;
         }
 
         // Is question seven correct?
         if (answerSeven.isChecked()) {
-            correctAnswers += 1;
+            correctAnswers = correctAnswers + 1;
         }
 
         // Is question eight correct?
         if (answerEight.isChecked()) {
-            correctAnswers += 1;
+            correctAnswers = correctAnswers + 1;
         }
 
         // Is question nine correct?
-
+        String answerNineString = answerNine.getText().toString();
+        if (answerNineString.equals(":")) {
+            correctAnswers++;
+        }
         // Is question ten correct?
         if (answerTen.isChecked()) {
-            correctAnswers += 1;
+            correctAnswers = correctAnswers + 1;
         }
 
         //Calculate score
-        float score = correctAnswers / 10;
-        Toast toast = new Toast(getApplicationContext());
-        toast.setGravity(Gravity.CENTER_VERTICAL, 0,0);
-        toast.setDuration(Toast.LENGTH_LONG);
-        toast.setView(layout);
+        double score = correctAnswers * 10.0;
+
+        //Display score as a Toast
+        Toast toast = Toast.makeText(getApplicationContext(), "You scored " + score, Toast.LENGTH_LONG);
         toast.show();
+
+        //Reset variable so that multiple presses of submit does not count correct answers multiple times.
+        correctAnswers = 0;
     }
 
 
