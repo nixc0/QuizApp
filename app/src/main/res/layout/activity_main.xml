@@ -9,6 +9,13 @@
         android:orientation="vertical"
         tools:context=".MainActivity">
 
+        <!-- A cute picture of a penguin -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/tux" />
+
         <!-- Question One -->
         <TextView
             android:layout_width="wrap_content"
@@ -63,7 +70,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="8dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="20dp"
             android:text="@string/questionTwo" />
 
         <RadioGroup
@@ -112,7 +119,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="8dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="20dp"
             android:text="@string/questionThree" />
 
         <RadioGroup
@@ -161,7 +168,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="8dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="20dp"
             android:text="@string/questionFour" />
 
         <CheckBox
@@ -207,7 +214,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="8dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="20dp"
             android:text="@string/questionFive" />
 
         <RadioGroup
@@ -256,7 +263,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="8dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="20dp"
             android:text="@string/questionSix" />
 
         <RadioGroup
@@ -305,7 +312,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="8dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="20dp"
             android:text="@string/questionSeven" />
 
         <RadioGroup
@@ -354,7 +361,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="8dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="20dp"
             android:text="@string/questionEight" />
 
         <RadioGroup
@@ -403,7 +410,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="8dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="20dp"
             android:text="@string/questionNine" />
 
         <EditText
@@ -420,7 +427,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="8dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="20dp"
             android:text="@string/questionTen" />
 
         <RadioGroup
