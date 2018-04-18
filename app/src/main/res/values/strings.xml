@@ -58,13 +58,13 @@
     <string name="answerEightD">C:</string>
 
     <!-- Question nine and answers to question nine. Fill in the blank -->
-    <string name="questionNine">9. What do you type to switch to insert mode from Vi's command mode?</string>
+    <string name="questionNine">9. What do you type to switch to insert mode from Vi\'s command mode?</string>
     <string name="answerNineA">:</string>
 
 
 
     <!-- Question ten and answers to question ten. -->
-    <string name="questionTen">10. How do you switch to command mode from Vi's insert mode</string>
+    <string name="questionTen">10. How do you switch to command mode from Vi\'s insert mode</string>
     <string name="answerTenA">Press Esc</string>
     <string name="answerTenB">Press Enter</string>
     <string name="answerTenC">Press /</string>
