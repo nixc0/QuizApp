@@ -68,7 +68,7 @@
     <string name="answerTenA">Press Esc</string>
     <string name="answerTenB">Press Enter</string>
     <string name="answerTenC">Press /</string>
-    <string name="answerTenD">Press \</string>
+    <string name="answerTenD">Press \\</string>
 
     <!-- String for "Submit" button -->
     <string name="submit">Submit</string>

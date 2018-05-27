@@ -13,7 +13,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     // Declare global variables
-    double correctAnswers = 0;
+    private double correctAnswers = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +27,9 @@ public class MainActivity extends AppCompatActivity {
         RadioButton answerOne = findViewById(R.id.answerOneB);
         RadioButton answerTwo = findViewById(R.id.answerTwoC);
         RadioButton answerThree = findViewById(R.id.answerThreeB);
+        CheckBox answerFourA = findViewById(R.id.answerFourA);
         CheckBox answerFourB = findViewById(R.id.answerFourB);
+        CheckBox answerFourC = findViewById(R.id.answerFourC);
         CheckBox answerFourD = findViewById(R.id.answerFourD);
         RadioButton answerFive = findViewById(R.id.answerFiveB);
         RadioButton answerSix = findViewById(R.id.answerSixA);
@@ -40,64 +42,78 @@ public class MainActivity extends AppCompatActivity {
 
         // Is question one correct?
         if (answerOne.isChecked()) {
-            correctAnswers = correctAnswers + 1;
+            correctAnswers++;
         }
 
         // Is question two correct?
         if (answerTwo.isChecked()) {
-            correctAnswers = correctAnswers + 1;
+            correctAnswers++;
         }
 
         // Is question three correct?
         if (answerThree.isChecked()) {
-            correctAnswers = correctAnswers + 1;
+            correctAnswers++;
         }
 
         // Is question four correct?
-        if (answerFourB.isChecked()) {
-            correctAnswers = correctAnswers + .5;
+
+        // Completely correct by checking both B and D
+        if (answerFourB.isChecked() && answerFourD.isChecked() && !answerFourA.isChecked() && !answerFourC.isChecked()) {
+            correctAnswers++;
         }
-        if (answerFourD.isChecked()) {
+
+        // Half correct by only checking answer B
+        else if (answerFourB.isChecked() && !answerFourD.isChecked() && !answerFourA.isChecked() && !answerFourC.isChecked()) {
             correctAnswers = correctAnswers + .5;
         }
 
+        // Half correct by only checking answer D
+        else if (!answerFourB.isChecked() && answerFourD.isChecked() && !answerFourA.isChecked() && !answerFourC.isChecked()) {
+            correctAnswers = correctAnswers + .5;
+        }
 
         // Is question five correct?
         if (answerFive.isChecked()) {
-            correctAnswers = correctAnswers + 1;
+            correctAnswers++;
         }
 
         // Is question six correct?
         if (answerSix.isChecked()) {
-            correctAnswers = correctAnswers + 1;
+            correctAnswers++;
         }
 
         // Is question seven correct?
         if (answerSeven.isChecked()) {
-            correctAnswers = correctAnswers + 1;
+            correctAnswers++;
         }
 
         // Is question eight correct?
         if (answerEight.isChecked()) {
-            correctAnswers = correctAnswers + 1;
+            correctAnswers++;
         }
 
         // Is question nine correct?
-        String answerNineString = answerNine.getText().toString();
-        if (answerNineString.equals(":")) {
+        String answerNineString = answerNine.getText().toString().trim();
+        if (answerNineString.equals("i")) {
             correctAnswers++;
         }
         // Is question ten correct?
         if (answerTen.isChecked()) {
-            correctAnswers = correctAnswers + 1;
+            correctAnswers++;
         }
 
         //Calculate score
         double score = correctAnswers * 10.0;
 
         //Display score as a Toast
-        Toast toast = Toast.makeText(getApplicationContext(), "You scored " + score, Toast.LENGTH_LONG);
-        toast.show();
+
+        if (score == 100.0) {
+            Toast toast = Toast.makeText(getApplicationContext(), "You scored a perfect score!", Toast.LENGTH_LONG);
+            toast.show();
+        } else {
+            Toast toast = Toast.makeText(getApplicationContext(), "You scored " + score, Toast.LENGTH_LONG);
+            toast.show();
+        }
 
         //Reset variable so that multiple presses of submit does not count correct answers multiple times.
         correctAnswers = 0;
